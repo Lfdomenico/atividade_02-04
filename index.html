@@ -3,17 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 02/ 04</title>
+    <title>Atividade 02/04</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
 
+        .projeto {
+            text-align: center;
+            border: 2px solid;
+            padding: 10px;
+        }
+
+        .projeto img {
+            width: 100px; 
+            height: 100px;
+        }
+
+        .header{
+            text-align: center;
+        }
+        #foto{
+            margin-left: 45%;
+            text-align: center;
+            height: 150px;
+        }
+
+    </style>
 </head>
 <body>
-    <img style="text-align: center;"  src="imagem/eu.jpeg" alt="minha foto">
-    <h1 style="text-align: center;">Luiz Fernando Moreira Domênico</h2>
-    <p style="text-align: center;">Estudante do 4o período de Engenharia de Software da UTFPR-CP</p>
-    <br><br>
+    <img id="foto" src="/Imagens/eu.jpeg" alt="minha foto">
+    <h1 class="header">Luiz Fernando Moreira Domênico</h1>
+    <p class="header">Estudante do 4o período de Engenharia de Software da UTFPR-CP</p>
+    <br>
 
     <h2>Projetos:</h2>
     <br>
+
+    <div class="container">
+        
+        <div class="projeto">
+            <img src="/Imagens/imagem1.jpg" alt="imagem_projeto1">
+            <p>Projeto em Java utilizando conceitos da Programação Orientada a Objetos</p>
+            <p>de uma loja de instrumentos musicais, capaz de adicionar, excluir, alterar e</p>
+            <p>alterar informações.</p>
+        </div>
+
+        <div class="projeto">
+            <img src="/Imagens/imagem2.png" alt="imagem_projeto2">
+            <p>Projeto em Java e utilizando o SGBD MySQL para o gerenciamento de um</p>
+            <p>sistema bancário, tendo funcionalidades tais como: Cadastrar cliente,</p>
+            <p>realizar depósito, sacar dinheiro, entre outras.</p>
+            <p>Banco de dados utilizado para controle e fluxo dos dados contidos e</p>
+            <p>para consultas específicas.</p>
+        </div>
+    </div>
 
 </body>
 </html>
